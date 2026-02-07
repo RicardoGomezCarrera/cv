@@ -1,0 +1,296 @@
+%% Academic CV for Economics
+%% Clean minimal style following standard economics conventions
+%% Based on article class with custom formatting
+
+\documentclass[11pt,letterpaper]{article}
+
+% Packages
+\usepackage[top=1in,bottom=1in,left=1in,right=1in]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{hyperref}
+\usepackage{xcolor}
+\usepackage{array}
+
+% Hyperlink settings
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue!70!black,
+    urlcolor=blue!70!black,
+    citecolor=blue!70!black
+}
+
+% Remove paragraph indent, add space between paragraphs
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0.4em}
+
+% Custom section formatting
+\renewcommand{\section}[1]{%
+  \vspace{0.8em}%
+  {\large\bfseries\MakeUppercase{#1}}%
+  \vspace{0.3em}%
+  \hrule%
+  \vspace{0.4em}%
+}
+
+% Custom compact itemize
+\newenvironment{citemize}{%
+  \begin{list}{$\cdot$}{%
+    \setlength{\leftmargin}{1.5em}%
+    \setlength{\itemsep}{0pt}%
+    \setlength{\parsep}{0pt}%
+    \setlength{\topsep}{0.2em}%
+    \setlength{\partopsep}{0pt}%
+  }%
+}{%
+  \end{list}%
+}
+
+% Header/footer with name and page numbers
+\makeatletter
+\def\ps@cvpages{%
+  \def\@oddhead{\hfill{\small Ricardo G\'{o}mez-Carrera}\hspace{1em}{\small\thepage}}%
+  \def\@evenhead{\hfill{\small Ricardo G\'{o}mez-Carrera}\hspace{1em}{\small\thepage}}%
+  \def\@oddfoot{}%
+  \def\@evenfoot{}%
+}
+\def\ps@firstpage{%
+  \def\@oddhead{}%
+  \def\@evenhead{}%
+  \def\@oddfoot{\hfill{\small\thepage}\hfill}%
+  \def\@evenfoot{\hfill{\small\thepage}\hfill}%
+}
+\makeatother
+
+\pagestyle{cvpages}
+
+\begin{document}
+\thispagestyle{firstpage}
+
+%% ============================================================
+%%  HEADER
+%% ============================================================
+
+\begin{center}
+{\LARGE \textbf{Ricardo G\'{o}mez-Carrera}} \\[0.5em]
+Paris School of Economics \\
+48 Boulevard Jourdan, 75014 Paris, France \\[0.3em]
+Phone: +33 (06) 5114 0100 \quad $\diamond$ \quad
+\href{mailto:ricardo.gomez-carrera@psemail.eu}{ricardo.gomez-carrera@psemail.eu} \\
+\href{https://www.gomezricardo.com/}{www.gomezricardo.com} \quad $\diamond$ \quad
+\href{https://www.linkedin.com/in/ricardo-g\%C3\%B3mez-carrera-60849412a/}{LinkedIn}
+\end{center}
+
+\vspace{0.3em}
+
+%% ============================================================
+%%  EDUCATION
+%% ============================================================
+
+\section{Education}
+
+\textbf{Paris School of Economics (PSE)} \hfill Paris, France \\
+Ph.D.\ in Economics \hfill Sep.\ 2025--present \\
+% Dissertation: ``[Title TBD]'' \\
+% Advisor: [Name] \\[0.3em]
+Master in Applied Economics (PPD), \textit{high honors} \hfill Sep.\ 2024
+
+\textbf{Instituto Tecnol\'{o}gico Aut\'{o}nomo de M\'{e}xico (ITAM)} \hfill Mexico City, Mexico \\
+Master in Applied Economics, \textit{highest honors} \hfill Nov.\ 2022 \\
+B.A.\ in Economics \hfill Mar.\ 2019
+
+%% ============================================================
+%%  RESEARCH INTERESTS
+%% ============================================================
+
+\section{Research Interests}
+
+Development economics, economics of education, labor economics, health economics, urban economics
+
+%% ============================================================
+%%  REFERENCES
+%% ============================================================
+
+% \section{References}
+% Uncomment and fill in when ready:
+%
+% \begin{tabular}{@{}lll@{}}
+% \textbf{[Name]} & \textbf{[Name]} & \textbf{[Name]} \\
+% [Title] & [Title] & [Title] \\
+% [Institution] & [Institution] & [Institution] \\
+% [Email] & [Email] & [Email] \\
+% [Phone] & [Phone] & [Phone]
+% \end{tabular}
+
+%% ============================================================
+%%  PUBLICATIONS
+%% ============================================================
+
+\section{Peer-Reviewed Publications}
+
+\href{https://doi.org/10.1016/j.latcb.2022.100083}{``Sectoral Supply and Demand Shocks during COVID-19: Evidence from Mexico''} (with Ricardo Chavar\'{i}n and Alfredo Salgado). \textit{Latin American Journal of Central Banking}, 4(1), March 2023.
+
+%% ============================================================
+%%  WORKING PAPERS
+%% ============================================================
+
+\section{Working Papers}
+
+\href{https://www.gomezricardo.com/_files/ugd/6c48d2_f7d4f128f80d43a68e0f8d0839a7733c.pdf}{``Starting Strong: Medium- and Longer-run Benefits of Mexico's Universal Preschool Mandate''}, 2025 (with Jere R.\ Behrman, Susan W.\ Parker, Petra E.\ Todd, and Weilong Zhang).
+
+\href{https://wid.world/document/equality-and-development-a-comparative-historical-perspective-1800-2025-world-inequality-lab-working-paper-2025-25/}{``Equality and Development: A Comparative \& Historical Perspective 1800--2025''}, 2025 (with Thomas Piketty, Emmanuel Saez, Gabriel Zucman, et al.).
+
+\href{https://www.gomezricardo.com/_files/ugd/6c48d2_2b6c95d83dfd42b7b54314d27300d579.pdf}{``From Playtime to Primetime: The Medium-term Effects of Compulsory Preschool in Mexico''}, 2024 (supervised by Karen Macours).
+
+\href{https://www.gomezricardo.com/_files/ugd/6c48d2_bdbdc10d048a4eb3b0681b3a99a72f2d.pdf}{``Going Big in Health: Effect of a Large-Scale Preventive Health Policy''}, 2022 (with Arturo Aguilar and Adri\'{a}n Rubli).
+
+\href{https://www.gomezricardo.com/_files/ugd/6c48d2_f28f5916ddd2493696628ddb47ce221f.pdf}{``Mandatory Preschool and Student Test Scores: Evidence from Mexico''}, 2022 (supervised by Rafael de Hoyos).
+
+\href{https://www.gomezricardo.com/_files/ugd/6c48d2_e1aef9a4dbfc424a84b547657165e561.pdf}{``Is the Bicycle a Substitute for the Automobile? Evidence from Mexico City''}, 2020 (with Amado Crotte, Jorge Narezo, and Marc Jacob).
+
+\href{https://www.gomezricardo.com/_files/ugd/6c48d2_76f3ba5070204075b2d10fbcc4d2d839.pdf}{``Evaluation of the Implementation of Metrob\'{u}s Line~1 on Air Quality in Mexico City''}, 2019 (supervised by Emilio Guti\'{e}rrez).
+
+%% ============================================================
+%%  POLICY REPORTS
+%% ============================================================
+
+\section{Policy Reports}
+
+\href{https://wir2026.wid.world/}{\textit{World Inequality Report 2026}}, World Inequality Lab, 2026.
+
+\href{https://wid.world/document/extending-wid-population-series-projections-2024-2100-age-gender-breakdowns-world-inequality-lab-technical-note-2024-12/}{``Extending WID Population Series: Projections 2024--2100, Age \& Gender Breakdowns''}, World Inequality Lab Technical Note 2024/12.
+
+\href{https://wid.world/document/global-inequality-update-2024-technical-note/}{``Global Inequality Update 2024''}, World Inequality Lab Technical Note.
+
+%% ============================================================
+%%  HONORS AND AWARDS
+%% ============================================================
+
+\section{Honors and Awards}
+
+\begin{tabular}{@{}ll@{}}
+2025 & \href{https://www.linkedin.com/posts/centre-des-professions-financieres_36cimef-activity-7325922367442935810-NmD_}{36th International Master Thesis Competition in Economics and Finance} (finalist) \\
+2024 & \href{https://agenda.colmex.mx/Actividad/4159/ceremonia-de-entrega-del-premio-de-economia-joaquin-xirau-icaza-2024/20241022}{Joaqu\'{i}n Xirau Icaza Economics Award} (winner) \\
+2024 & \href{https://exalumnos.itam.mx/es/noticia/conoce-los-ganadores-del-xxix-premio-de-investigacion-exitam}{XXIX ExITAM Research Award} (honorable mention) \\
+2024 & \href{https://www.cemla.org/actividades/2022-final/2022-11-xxvii-meeting-of-the-central\%E2\%80\%93bank\%E2\%80\%93researchers-network.html}{Latin American Journal of Central Banking Special Issue Award} (second place) \\
+\end{tabular}
+
+%% ============================================================
+%%  PRESENTATIONS
+%% ============================================================
+
+\section{Presentations}
+
+\begin{tabular}{@{}ll@{}}
+2023 & \href{https://posgrados.itam.mx/es/evento/itam-alumni-conference}{ITAM Alumni Conference}, Mexico City \\
+\end{tabular}
+
+%% ============================================================
+%%  MEDIA CONTRIBUTIONS
+%% ============================================================
+
+\section{Media Contributions}
+
+\begin{tabular}{@{}ll@{}}
+2024 & \href{https://voxdev.org/topic/education/mexicos-preschool-mandate-set-children-succeed}{``Mexico's Preschool Mandate Set Children up to Succeed''}, VoxDev \\
+\end{tabular}
+
+%% ============================================================
+%%  RESEARCH EXPERIENCE
+%% ============================================================
+
+\section{Research Experience}
+
+\textbf{World Inequality Lab} \hfill Paris, France \\
+\textit{World Inequality Report Coordinator} \hfill Dec.\ 2024--present
+\begin{citemize}
+  \item Coordinator of the \href{https://wir2026.wid.world/}{World Inequality Report 2026}: global analysis of income, wealth, gender inequality, and environmental impacts.
+\end{citemize}
+\textit{Economist} \hfill Aug.\ 2024--Nov.\ 2024
+\begin{citemize}
+  \item Lead author of two technical notes expanding the World Inequality Database with historical and projected population series for 216 countries (1800--2100) and updating global inequality estimates.
+\end{citemize}
+
+\textbf{Banco de M\'{e}xico (Central Bank)} \hfill Mexico City, Mexico \\
+\textit{Research Economist} \hfill Sep.\ 2020--Sep.\ 2024
+\begin{citemize}
+  \item Co-authored a published article analyzing supply and demand shocks from COVID-19 on Mexican sectoral activity using sign-restricted SBVAR.
+  \item Co-authored a research note on gender and labor force participation trends.
+  \item Managed and presented the Private Sector Economic Expectations Survey data.
+  \item Contributed to research on trade integration and unemployment, labor market slack measures via PCA, and financial forecast evaluation.
+\end{citemize}
+
+\textbf{Paris School of Economics} \hfill Paris, France \\
+\textit{Research Assistant to Karen Macours} \hfill Sep.\ 2023--Dec.\ 2023
+\begin{citemize}
+  \item Studied agricultural innovation adoption in Uganda in collaboration with CGIAR and the World Bank.
+  \item Contributed to data management, programming, and econometric analysis.
+\end{citemize}
+
+\textbf{Center for Economic Research, ITAM} \hfill Mexico City, Mexico \\
+\textit{Research Assistant to Arturo Aguilar and Adri\'{a}n Rubli} \hfill Feb.\ 2020--Jan.\ 2022
+\begin{citemize}
+  \item Co-authored a working paper evaluating a large-scale preventive health policy in Mexico. Promoted from RA to co-author.
+\end{citemize}
+
+\textbf{Inter-American Development Bank (IADB)} \hfill Mexico City, Mexico \\
+\textit{External Consultant with Amado Crotte} \hfill May 2019--Oct.\ 2019
+\begin{citemize}
+  \item Co-authored a working paper on transport policy evaluation using diff-in-diff identification.
+\end{citemize}
+
+%% ============================================================
+%%  OTHER PROFESSIONAL EXPERIENCE
+%% ============================================================
+
+\section{Other Professional Experience}
+
+\textbf{Ministry of Finance and Public Credit} \hfill Mexico City, Mexico \\
+\textit{Director of Domestic Debt Issuance} \hfill Oct.\ 2019--Jul.\ 2020
+\begin{citemize}
+  \item Led a team of 5 professionals in the Federal Government's domestic debt issuance strategy.
+  \item Mitigated COVID-19's initial impact on the Mexican debt market by reducing liquidity constraints.
+\end{citemize}
+\textit{Deputy Director of Public Debt and Infrastructure Projects} \hfill Jun.\ 2017--Sep.\ 2019
+\begin{citemize}
+  \item Led inter-secretarial working groups for structuring transport infrastructure projects.
+  \item Collaborated in managing the National Infrastructure Fund and performed IMF-methodology debt sustainability analysis.
+\end{citemize}
+\textit{Head of Department of Infrastructure Projects} \hfill Mar.\ 2017--Jun.\ 2017
+\begin{citemize}
+  \item Evaluated and structured infrastructure projects in the transport and water sectors.
+\end{citemize}
+
+\textbf{C-230 Consultores} \hfill Mexico City, Mexico \\
+\textit{Consultant} \hfill Sep.\ 2016--Feb.\ 2017
+\begin{citemize}
+  \item Policy evaluation and design at a leading Mexican think tank; projects on digital entrepreneurship and urban development.
+\end{citemize}
+
+\textbf{Descifra} \hfill Mexico City, Mexico \\
+\textit{Analyst} \hfill Dec.\ 2015--May 2016
+\begin{citemize}
+  \item Used georeferenced analysis and big data for market identification; contributed to sales prediction models.
+\end{citemize}
+
+%% ============================================================
+%%  SKILLS
+%% ============================================================
+
+\section{Skills and Languages}
+
+\textbf{Software:} R, Stata, EViews, Matlab, \LaTeX, QGIS, MS Office \\
+\textbf{Languages:} Spanish (native), English (fluent; TOEFL 111/120), French (intermediate)
+
+%% ============================================================
+%%  SERVICE
+%% ============================================================
+
+\section{Service}
+
+\textbf{CISV International} --- Co-head of the Mexican Leaders' Training Committee \hfill 2011--2018 \\
+\textbf{Enlace Rural} --- Literacy volunteer in rural Mexico \hfill 2014--2015 \\
+\textbf{Colonias de Vacaciones, I.A.P.} --- Children's development volunteer \hfill 2011--2014
+
+\end{document}
